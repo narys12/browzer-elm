@@ -1,0 +1,7 @@
+var _user$project$Models$Model = function (a) {
+	return {memories: a};
+};
+var _user$project$Models$Memory = F2(
+	function (a, b) {
+		return {id: a, title: b};
+	});

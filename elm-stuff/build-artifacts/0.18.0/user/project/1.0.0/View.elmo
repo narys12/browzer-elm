@@ -1,0 +1,31 @@
+var _user$project$View$Card = {ctor: 'Card'};
+var _user$project$View$viewMemory = function (memory) {
+	return A3(
+		_mdgriffith$style_elements$Element$el,
+		_user$project$View$Card,
+		{ctor: '[]'},
+		_mdgriffith$style_elements$Element$text(memory.title));
+};
+var _user$project$View$viewMemories = function (model) {
+	return A2(_elm_lang$core$List$map, _user$project$View$viewMemory, model.memories);
+};
+var _user$project$View$stylesheet = _mdgriffith$style_elements$Style$styleSheet(
+	{
+		ctor: '::',
+		_0: A2(
+			_mdgriffith$style_elements$Style$style,
+			_user$project$View$Card,
+			{ctor: '[]'}),
+		_1: {ctor: '[]'}
+	});
+var _user$project$View$None = {ctor: 'None'};
+var _user$project$View$view = function (model) {
+	return A2(
+		_mdgriffith$style_elements$Element$layout,
+		_user$project$View$stylesheet,
+		A3(
+			_mdgriffith$style_elements$Element$row,
+			_user$project$View$None,
+			{ctor: '[]'},
+			_user$project$View$viewMemories(model)));
+};
