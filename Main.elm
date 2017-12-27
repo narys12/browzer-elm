@@ -25,4 +25,4 @@ subscriptions model =
 
 init : (Model, Cmd Msg)
 init = 
-    (Model [], Cmd.none)
+    (Model (List.repeat 3 (Memory "1" "Paris" (List.repeat 2 (Image "https://cache-graphicslib.viator.com/graphicslib/thumbs360x240/26685/SITours/discover-prague-private-tour-3-hours-in-prague-277569.jpg")))), Cmd.none)
